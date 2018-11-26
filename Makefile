@@ -1,6 +1,6 @@
 DIRS = lib source
 
-.PHONY: clean
+.PHONY: all clean
 
 all:
 	@for d in $(DIRS); \
@@ -11,5 +11,5 @@ all:
 clean:
 	@for d in $(DIRS); \
 	do \
-		$(MAKE) -C $$dd clean; \
+		$(MAKE) -C $$d clean; \
 	done
