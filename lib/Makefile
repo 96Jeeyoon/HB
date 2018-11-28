@@ -1,5 +1,5 @@
 CC=gcc
-OBJS=baseball.o baseball_hard.o
+OBJS=baseball_easy.o baseball_hard.o
 LIB=libbaseballs.a
 
 $(LIB): $(OBJS)

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-void baseball()
+void baseball_easy()
 {
   int answer[3];
   int player[3];

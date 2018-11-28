@@ -1,4 +1,4 @@
-#include "baseball.h"
+#include "baseball_easy.h"
 #include "baseball_hard.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -12,7 +12,7 @@ int main(void)
 	scanf("%d",&mode_num);
 
 	if(mode_num == 1) {
-		baseball();
+		baseball_easy();
 	}
 
 	else if(mode_num == 2){
