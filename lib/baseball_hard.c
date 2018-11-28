@@ -25,7 +25,7 @@ void baseball_hard()
 
   }
 
-//  printf("%d %d %d\n\n\n",answer[0],answer[1],answer[2]);
+  //printf("%d %d %d %d\n\n\n",answer[0],answer[1],answer[2],answer[3]);
 
 
   printf("\n***GAME START***GAME START***GAME START***\n\n");
