@@ -1,6 +1,6 @@
 CC=gcc
-OBJS=baseball.o
-LIB=libbaseballs.a
+OBJS=baseball.o baseball_hard.o
+LIB=libbaseballs.a libbaseballhard.a
 
 $(LIB): $(OBJS)
 	ar rv $(LIB) $(OBJS)
