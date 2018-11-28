@@ -1,6 +1,7 @@
 #include "baseball.h"
-#include "basebll_hard.h"
+#include "baseball_hard.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -8,7 +9,7 @@ int main(void)
 	printf("1. Baseball game_easy mode.\n");
 	printf("2. Baseball game_hard mode.\n");
 	
-	scanf("%d",mode_num);
+	scanf("%d",&mode_num);
 
 	if(mode_num == 1) {
 		baseball();
