@@ -1,3 +1,8 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <malloc.h>
+#include <time.h>
+
 int del_num(int **user, int check, int num)
 {
 	int i,j;
