@@ -116,13 +116,13 @@ void one(int **user, int num, int mode)//PRACTICE MODE**********************
 
 void two(int **user, int **com, int num, int mode)
 {
-  int *check_ary;
+  int *check_arr;
   int i,tmp,count=0;
 
   user = myAlloc(num);
   com = myAlloc(num);
 
-  check_ary = (int *)malloc((num*num) * sizeof(int));
+  check_arr = (int *)malloc((num*num) * sizeof(int));
 
   init_bingo(user,num);
   init_bingo(com,num);
@@ -135,31 +135,33 @@ void two(int **user, int **com, int num, int mode)
 	if(check_bingo(user, num, mode) == 5)
 	{
 	  printf("your win.");
+          break;
 	}
 	if(check_bingo(com, num, mode) == 5)
 	{
 	  printf("computer win.");
+          break;
 	}
 
-	if( (tmp = input_num(check_ary, num, &count, 1)) == 0 )
+	if( (tmp = input_num(check_arr, num, &count, 1)) == 0 )
 	   break;
 
 	for(i=0; i<(num*num); i++)
 	{
-	   del_num(user, check_ary[i], num);
-	   del_num(com, check_ary[i], num);
+	   del_num(user, check_arr[i], num);
+	   del_num(com, check_arr[i], num);
 	}
 
 	system("cls");
 	monitor(user, com, num);
 
-	tmp = input_num(check_ary, num, &count, mode);
+	tmp = input_num(check_arr, num, &count, mode);
 	printf("\n Computer Choose (%d)",tmp);
 
 	for(i=0; i<(num*num); i++)
 	{
-	   del_num(user, check_ary[i], num);
-	   del_num(com, check_ary[i], num);
+	   del_num(user, check_arr[i], num);
+	   del_num(com, check_arr[i], num);
 	}
 
 	fflush(stdin);
@@ -214,7 +216,7 @@ void monitor(int **user, int **com, int num) //bingo monitor print
 }
 
 
-int input_num(int *check_ary, int num, int *count, int mode)
+int input_num(int *check_arr, int num, int *count, int mode)
 {
    int tmp, i;
 
@@ -236,12 +238,12 @@ int input_num(int *check_ary, int num, int *count, int mode)
      {
         for(i=0; i<(num*num); i++)
         {
-           if(check_ary[i] == tmp)
+           if(check_arr[i] == tmp)
              break;
         }
         if(i == (num*num))
         {
-           check_ary[(*count)++] = tmp;
+           check_arr[(*count)++] = tmp;
            return tmp;
         }
         else
@@ -292,8 +294,8 @@ int check_bingo(int **user, int num, int mode)
       if(garo == 5)
       {
           bingo++;
-          //if practice mode, game end 
-           return bingo;
+          if(mode == 1) //if practice mode, game end 
+            return bingo;
       }
    }
 
@@ -331,7 +333,7 @@ int del_num(int **user, int check, int num)
 	return 0;
 }
 
-int same_num(int **user, int tmp, int num)
+int sam_num(int **user, int tmp, int num)
 {
 	int i,j;
 
@@ -354,7 +356,7 @@ void init_bingo(int **init, int num)
       for(j = 0; j<num; j++)
       {
          tmp = rand()%(num*num)+1;
-         if(same_num(init, tmp, num))
+         if(sam_num(init, tmp, num))
          {
             j--;
          }
