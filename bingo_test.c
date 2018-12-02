@@ -74,7 +74,7 @@ void one(int **user, int num, int mode)//PRACTICE MODE**********************
    user = myAlloc(num);
    check_arr = (int *)malloc((num*num) * sizeof(int));
 
-   //set practice mode bingo...
+   init_bingo(user, num); //set practice mode bingo...
 
    while(1)
    {
@@ -99,7 +99,17 @@ void one(int **user, int num, int mode)//PRACTICE MODE**********************
          }
          printf("|\n");
       }
-      // check bingo. if retun value is not 0 then end the loop.
+      
+      if(check_bingo(user, num, mode))// check bingo. if retun value is not 0 then end the loop.
+      {
+         printf("\nYOU COMPLETED ONE BINGO!\n");
+         break;
+      }
+      
+      if( (tmp = input_num(check_arr, num, &count, 1)) ==0 )
+         break;
+      for(i=0; i<(num*num); i++)
+         del_num(user, check_arr[i], num);
    } 
 }
 
