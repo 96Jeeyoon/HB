@@ -12,7 +12,7 @@ int check_bingo(int **user, int num, int mode);
 int input_num(int *check_ary, int num, int *count, int mode);
 
 void init_bingo(int **init, int num);
-void monitor(int **user, int **com, int num);
+//void monitor(int **user, int **com, int num);
 void one(int **user, int num, int mode);
 void two(int **user, int **com, int num, int mode);
 
@@ -135,7 +135,34 @@ void two(int **user, int **com, int num, int mode)
 	while (1)
 	{
 		system("clear");
-		monitor(user, com, num);
+		//monitor(user, com, num);
+	printf("\nme\n");
+		for (int i = 0; i < 5; i++){
+			for (int j = 0; j < 5; j++){
+			//	printf("%3d", user[i][j]);
+				if (user[i][j] == 88)
+					printf("%4c", user[i][j]); // X
+				else
+					printf("%4d", user[i][j]); // number
+			}
+			printf("\n");
+		}
+		printf("com\n");
+
+
+		for (int i = 0; i < 5; i++){
+			for (int j = 0; j < 5; j++)
+			{
+			//	printf("%3d", com[i][j]);
+				if (com[i][j] == 88)
+					printf("%4c", com[i][j]); // X
+				else
+					printf("%4d", com[i][j]); // number
+			}
+			printf("\n");
+		}
+
+
 
 		if (check_bingo(user, num, mode) == 5)
 		{
@@ -158,7 +185,34 @@ void two(int **user, int **com, int num, int mode)
 		}
 
 		system("clear");
-		monitor(user, com, num);
+		//monitor(user, com, num);
+
+	printf("\nme\n");
+		for (int i = 0; i < 5; i++){
+			for (int j = 0; j < 5; j++){
+			//	printf("%3d", user[i][j]);
+				if (user[i][j] == 88)
+					printf("%4c", user[i][j]); // X
+				else
+					printf("%4d", user[i][j]); // number
+			}
+			printf("\n");
+		}
+		printf("com\n");
+
+
+		for (int i = 0; i < 5; i++){
+			for (int j = 0; j < 5; j++)
+			{
+			//	printf("%3d", com[i][j]);
+				if (com[i][j] == 88)
+					printf("%4c", com[i][j]); // X
+				else
+					printf("%4d", com[i][j]); // number
+			}
+			printf("\n");
+		}
+
 
 		tmp = input_num(check_arr, num, &count, mode);
 		printf("\n Computer Choose (%d)", tmp);
@@ -185,7 +239,7 @@ int** myAlloc(int num)
 	}
 	return tmp;
 }
-
+/*
 void monitor(int **user, int **com, int num) //bingo monitor print
 {
 	int i, j;
@@ -220,6 +274,7 @@ void monitor(int **user, int **com, int num) //bingo monitor print
 	}
 }
 
+*/
 
 int input_num(int *check_arr, int num, int *count, int mode)
 {
