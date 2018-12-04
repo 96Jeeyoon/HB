@@ -3,7 +3,6 @@
 #include <malloc.h>
 #include <time.h>
 
-
 int check_bingo(int **user, int num, int mode)
 {
 	int i, j, bingo = 0;
@@ -58,4 +57,3 @@ int check_bingo(int **user, int num, int mode)
 
 	return bingo;
 }
-

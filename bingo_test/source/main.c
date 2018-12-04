@@ -3,8 +3,6 @@
 #include <malloc.h>
 #include <time.h>
 
-#define NUM 5
-
 #include "menu.h"
 #include "myAlloc.h"
 #include "check_bingo.h"

@@ -5,11 +5,11 @@
 
 int del_num(int **user, int check, int num)
 {
-	int i,j;
-	for(i=0;i<num;i++) {
-		for(j=0; j<num; j++) {
-			if(check == user[i][j]) {
-				user[i][j] == 'X';
+	int i, j;
+	for (i = 0; i<num; i++) {
+		for (j = 0; j<num; j++) {
+			if (check == user[i][j]) {
+				user[i][j] = 'X';
 				return 0;
 			}
 		}

@@ -5,11 +5,11 @@
 
 int same_num(int **user, int tmp, int num)
 {
-	int i,j;
+	int i, j;
 
-	for(i=0; i<num; i++) {
-		for(j=0; j<num; j++) {
-			if(user[i][j] == tmp) {
+	for (i = 0; i<num; i++) {
+		for (j = 0; j<num; j++) {
+			if (user[i][j] == tmp) {
 				return 1;
 			}
 		}
