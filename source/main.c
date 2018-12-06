@@ -16,6 +16,8 @@
 #include "input_num.h"
 #include "same_num.h"
 
+#include "win.h"
+
 int main(void)
 {
 	int mode_num;

@@ -2,7 +2,9 @@
 #include <stdlib.h>
 #include <malloc.h>
 #include <time.h>
+
 #define NUM 5
+
 #include "myAlloc.h"
 #include "check_bingo.h"
 #include "input_num.h"
