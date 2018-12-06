@@ -5,7 +5,7 @@ OBJS=main.o
 .PHONY: clean
 
 $(EXE): $(OBJS)
-	$(CC) -o $(EXE) $(OBJS) -L../lib -lbaseballs
+	$(CC) -o $(EXE) $(OBJS) -L../lib -lHB
 
 %.o: %.c
 	$(CC) -g -c -I../include $< -o $@
