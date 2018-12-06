@@ -30,8 +30,9 @@ void two(int **user, int **com, int num, int mode)
 	{
 		system("clear");
 		//printf("\n Computer Choose (%d)\n", tmp);
-		printf("\n\n\n\t[user]\t\t\t\t[computer]\n");
-		for (int i = 0; i < 5; i++){
+		printf("\n\n\n\t[user]\t\t\t\t[computer]\n\n\n");
+		for (int i = 0; i < 5; i++)
+		{
 			printf("|");
 			for (int j = 0; j < 5; j++)
 			{
@@ -40,7 +41,7 @@ void two(int **user, int **com, int num, int mode)
 				else
 					printf("%4d", user[i][j]); // number
 			}
-			printf("    |\t |");
+			printf("   |\t |");
 
 			for (int j = 0; j < 5; j++)
 			{
@@ -49,10 +50,19 @@ void two(int **user, int **com, int num, int mode)
 				else
 					printf("%4d", com[i][j]); // number
 			}
-			printf("   |\n");
+			printf("   |\n|\t\t\t| \t |\t\t\t |\n");
 		}
 
 		//bingo check-win,lose
+
+		printf("\nYOU MADE %d BINGO!\n",check_bingo(user, num, mode));
+
+		printf("\nCOMPUTER MADE %d BINGO!\n",check_bingo(com, num, mode));
+
+
+
+
+
 		if (check_bingo(user, num, mode) == 5)
 		{
 			printf("\nyour win.\n"); win();
