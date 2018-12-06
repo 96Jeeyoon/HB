@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+#include "win.h"
+
 void baseball_easy()
 {
   int answer[3];
@@ -25,7 +27,7 @@ void baseball_easy()
 
   }
 
-//  printf("%d %d %d\n\n\n",answer[0],answer[1],answer[2]);
+  printf("%d %d %d\n\n\n",answer[0],answer[1],answer[2]);
 
 
   printf("\n***GAME START***GAME START***GAME START***\n\n");
@@ -69,28 +71,11 @@ void baseball_easy()
 
      if(strike == 3)
      {
-       printf("**********Congratulation!!!!!Wow!***********\n\n");
-       int i,j;
-       for( i = 4 ; i < 10; i +=2 )
-       {
-	  for( j = 0; j <= (10 - i); j++ ){printf(" ");}
-          for( j = 0; j <= i * 2; j++ ){printf("*");}
-          for( j = 0; j <= (10 - i) * 2; j++ ){printf(" ");}
-	  for( j = 0; j <= i * 2; j++ ){printf("*");}
-	  printf("\n");
-       }
-       for( i = 20; i >= 0; i -= 2 )
-       {
-          for( j = 0;  j <= 20 - i; j++ ){ printf(" ");} 
-          for( j = 0; j <= i * 2; j++ ){printf("*");}
-          printf("\n");
-       }
-       printf("**********Congratulation!!!!!Wow!***********\n\n");
- 
-        break;
-     }
+       win();
+       break;
+     } 
      printf("%d strike %d ball \n\n", strike, ball);
-
+     
      if(cnt == 10)
      {
        printf("\n***GAME OVER***GAME OVER***GAME OVER***\n");
