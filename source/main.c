@@ -20,10 +20,17 @@
 
 int main(void)
 {
+	
+	system("pause");
+	system("clear");
+
 	int mode_num;
+	printf("******************************************\n\n\n");
 	printf("1. Baseball game_easy mode.\n");
 	printf("2. Baseball game_hard mode.\n");
 	printf("3. Bingo game.\n");
+	printf("4. End this game.\n");
+	printf("\n\n\n******************************************\n\n\n");
 
 	scanf("%d",&mode_num);
 
@@ -59,6 +66,11 @@ int main(void)
 			system("pause");//print "Press any key to continue..."
 			system("clear");//clear screen
 		}
+	}
+
+	else if(mode_num == 4){
+		printf("\nGame Over\n");
+		return 0;
 	}
 
 	else {

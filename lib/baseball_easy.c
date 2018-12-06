@@ -6,6 +6,10 @@
 
 void baseball_easy()
 {
+
+  system("pause");
+  system("clear");
+
   int answer[3];
   int player[3];
   int strike = 0, ball = 0;
@@ -27,7 +31,7 @@ void baseball_easy()
 
   }
 
-  printf("%d %d %d\n\n\n",answer[0],answer[1],answer[2]);
+  printf("The answer is %d %d %d\n\n\n",answer[0],answer[1],answer[2]);
 
 
   printf("\n***GAME START***GAME START***GAME START***\n\n");

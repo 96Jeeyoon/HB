@@ -6,6 +6,9 @@
 
 void baseball_hard()
 {
+  system("pause");
+  system("clear");
+
   int answer[4];
   int player[4];
   int strike = 0, ball = 0;
@@ -27,7 +30,7 @@ void baseball_hard()
 
   }
 
-  printf("%d %d %d %d\n\n\n",answer[0],answer[1],answer[2],answer[3]);
+  printf("The answer is %d %d %d %d\n\n\n",answer[0],answer[1],answer[2],answer[3]);
 
 
   printf("\n***GAME START***GAME START***GAME START***\n\n");
