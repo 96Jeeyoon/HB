@@ -56,10 +56,10 @@ int main(void)
 			{
 			case 1://practice mode
 				one(user, num, mode); //user, num = 5, mode = 1
-				sleep(3); break;
+				sleep(5); break;
 			case 2://match mode
 				two(user, com, num, mode);
-				sleep(3); break;
+				sleep(5); break;
 			case 3://end the game
 				printf("\nGAME OVER\n");
 				return 0;

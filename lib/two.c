@@ -29,35 +29,30 @@ void two(int **user, int **com, int num, int mode)
 	while (1)
 	{
 		system("clear");
-		//monitor(user, com, num);
-	printf("\nme\n");
+		//printf("\n Computer Choose (%d)\n", tmp);
+		printf("\n\n\n\t[user]\t\t\t\t[computer]\n");
 		for (int i = 0; i < 5; i++){
-			for (int j = 0; j < 5; j++){
-			//	printf("%3d", user[i][j]);
+			printf("|");
+			for (int j = 0; j < 5; j++)
+			{
 				if (user[i][j] == 88)
 					printf("%4c", user[i][j]); // X
 				else
 					printf("%4d", user[i][j]); // number
 			}
-			printf("\n");
-		}
-		printf("com\n");
+			printf("    |\t |");
 
-
-		for (int i = 0; i < 5; i++){
 			for (int j = 0; j < 5; j++)
 			{
-			//	printf("%3d", com[i][j]);
 				if (com[i][j] == 88)
 					printf("%4c", com[i][j]); // X
 				else
 					printf("%4d", com[i][j]); // number
 			}
-			printf("\n");
+			printf("   |\n");
 		}
 
-
-
+		//bingo check-win,lose
 		if (check_bingo(user, num, mode) == 5)
 		{
 			printf("\nyour win.\n"); win();
@@ -79,34 +74,28 @@ void two(int **user, int **com, int num, int mode)
 		}
 
 		system("clear");
-		//monitor(user, com, num);
-
-	printf("\nme\n");
+		//printf("\n Computer Choose (%d)\n", tmp);
+		printf("\n\n\n\t[user]\t\t\t\t[computer]\n");
 		for (int i = 0; i < 5; i++){
-			for (int j = 0; j < 5; j++){
-			//	printf("%3d", user[i][j]);
+			printf("|");
+			for (int j = 0; j < 5; j++)
+			{
 				if (user[i][j] == 88)
 					printf("%4c", user[i][j]); // X
 				else
 					printf("%4d", user[i][j]); // number
 			}
-			printf("\n");
-		}
-		printf("com\n");
+			printf("    |\t |");
 
-
-		for (int i = 0; i < 5; i++){
 			for (int j = 0; j < 5; j++)
 			{
-			//	printf("%3d", com[i][j]);
 				if (com[i][j] == 88)
 					printf("%4c", com[i][j]); // X
 				else
 					printf("%4d", com[i][j]); // number
 			}
-			printf("\n");
+			printf("   |\n");
 		}
-
 
 		tmp = input_num(check_arr, num, &count, mode);
 		printf("\n Computer Choose (%d)", tmp);
