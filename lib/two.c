@@ -11,6 +11,8 @@
 #include "del_num.h"
 #include "init_bingo.h"
 
+#include "win.h"
+
 void two(int **user, int **com, int num, int mode)
 {
 	int *check_arr;
@@ -58,12 +60,12 @@ void two(int **user, int **com, int num, int mode)
 
 		if (check_bingo(user, num, mode) == 5)
 		{
-			printf("your win.");
+			printf("\nyour win.\n"); win();
 			break;
 		}
 		if (check_bingo(com, num, mode) == 5)
 		{
-			printf("computer win.");
+			printf("\ncomputer win.\n");
 			break;
 		}
 

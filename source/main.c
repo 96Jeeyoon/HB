@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <malloc.h>
 #include <time.h>
+#include <unistd.h>
 
 #include "baseball_easy.h"
 #include "baseball_hard.h"
@@ -55,10 +56,10 @@ int main(void)
 			{
 			case 1://practice mode
 				one(user, num, mode); //user, num = 5, mode = 1
-				break;
+				sleep(3); break;
 			case 2://match mode
 				two(user, com, num, mode);
-				break;
+				sleep(3); break;
 			case 3://end the game
 				printf("\nGAME OVER\n");
 				return 0;

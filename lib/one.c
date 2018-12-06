@@ -8,6 +8,8 @@
 #include "del_num.h"
 #include "init_bingo.h"
 
+#include "win.h"
+
 #define NUM 5
 
 void one(int **user, int num, int mode)//PRACTICE MODE**********************
@@ -45,7 +47,7 @@ void one(int **user, int num, int mode)//PRACTICE MODE**********************
 
 		if (check_bingo(user, num, mode))// check bingo. if retun value is not 0 then end the loop.
 		{
-			printf("\nYOU COMPLETED ONE BINGO!\n");
+			printf("\nYOU COMPLETED ONE BINGO!\n"); win();
 			break;
 		}
 
