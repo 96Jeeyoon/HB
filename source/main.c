@@ -26,12 +26,13 @@ int main(void)
 	system("clear");
 
 	int mode_num;
-	printf("******************************************\n\n\n");
-	printf("1. Baseball game_easy mode.\n");
-	printf("2. Baseball game_hard mode.\n");
-	printf("3. Bingo game.\n");
-	printf("4. End this game.\n");
+	printf("\n\n\n\n******************************************\n\n\n\n");
+	printf("\t1. Baseball game_easy mode.\n\n");
+	printf("\t2. Baseball game_hard mode.\n\n");
+	printf("\t3. Bingo game.\n\n");
+	printf("\t4. End this game.\n");
 	printf("\n\n\n******************************************\n\n\n");
+	printf("ENTER THE NUMBER OF THE GAME : ");
 
 	scanf("%d",&mode_num);
 

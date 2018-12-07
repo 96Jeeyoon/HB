@@ -42,7 +42,7 @@ void baseball_hard()
      printf("%d time left\n",10-cnt);
 
 
-     printf("please enter 4 numbers\n");
+     printf("please enter 4 numbers : ");
      scanf("%d %d %d %d",&player[0],&player[1],&player[2],&player[3]);
 
      if((player[0] == player[1]) || (player[1] == player[2]) || (player[0] == player[2]) || (player[0] == player[3]) || (player[1] == player[3]))

@@ -43,7 +43,7 @@ void baseball_easy()
      printf("%d time left\n",10-cnt);
 
 
-     printf("please enter 3 numbers\n");
+     printf("please enter 3 numbers : ");
      scanf("%d %d %d",&player[0],&player[1],&player[2]);
 
      if((player[0] == player[1]) || (player[1] == player[2]) || (player[0] == player[2]))

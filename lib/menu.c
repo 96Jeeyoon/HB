@@ -6,13 +6,12 @@
 int menu()
 {
    int selmod;
-   printf("\n\n\n\n\n");
-   printf("*********************\n");
-   printf("1. PRACTICE MODE\n\n");
-   printf("2. MATCH MODE\n\n");
-   printf("3. END THIS GAME :-( \n\n");
-   printf("*********************\n");
-   printf("\n\n\n");
+   printf("\n\n\n\n******************************************\n\n\n\n");
+   printf("\t  1. PRACTICE MODE\n\n");
+   printf("\t  2. MATCH MODE\n\n");
+   printf("\t  3. END BINGO GAME :-( \n");
+   printf("\n\n\n******************************************\n\n\n");
+
 
    while(1)
    {
