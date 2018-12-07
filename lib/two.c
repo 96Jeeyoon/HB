@@ -28,6 +28,7 @@ void two(int **user, int **com, int num, int mode)
 
 	while (1)
 	{
+		
 		system("clear");
 		//printf("\n Computer Choose (%d)\n", tmp);
 		printf("\n\n\n\t[user]\t\t\t\t[computer]\n\n\n");
@@ -85,8 +86,9 @@ void two(int **user, int **com, int num, int mode)
 
 		system("clear");
 		//printf("\n Computer Choose (%d)\n", tmp);
-		printf("\n\n\n\t[user]\t\t\t\t[computer]\n");
-		for (int i = 0; i < 5; i++){
+		printf("\n\n\n\t[user]\t\t\t\t[computer]\n\n\n");
+		
+		/*for (int i = 0; i < 5; i++){
 			printf("|");
 			for (int j = 0; j < 5; j++)
 			{
@@ -105,9 +107,39 @@ void two(int **user, int **com, int num, int mode)
 					printf("%4d", com[i][j]); // number
 			}
 			printf("   |\n");
+		}*/
+
+
+		for (int i = 0; i < 5; i++)
+		{
+			printf("|");
+			for (int j = 0; j < 5; j++)
+			{
+				if (user[i][j] == 88)
+					printf("%4c", user[i][j]); // X
+				else
+					printf("%4d", user[i][j]); // number
+			}
+			printf("   |\t |");
+
+			for (int j = 0; j < 5; j++)
+			{
+				if (com[i][j] == 88)
+					printf("%4c", com[i][j]); // X
+				else
+					printf("%4d", com[i][j]); // number
+			}
+			printf("   |\n|\t\t\t| \t |\t\t\t |\n");
 		}
+		
 
 		tmp = input_num(check_arr, num, &count, mode);
+
+		printf("\nYOU MADE %d BINGO!\n",check_bingo(user, num, mode));
+
+		printf("\nCOMPUTER MADE %d BINGO!\n",check_bingo(com, num, mode));
+
+		sleep(1);
 		printf("\n Computer Choose (%d)", tmp);
 
 		for (i = 0; i<(num*num); i++)
