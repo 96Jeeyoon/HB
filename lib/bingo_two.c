@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <malloc.h>
 #include <time.h>
+#include <unistd.h>
 
 #define NUM 5
 
@@ -14,7 +15,7 @@
 #include "win.h"
 #include "lose.h"
 
-void two(int **user, int **com, int num, int mode)
+void bingo_two(int **user, int **com, int num, int mode)
 {
 	int *check_arr;
 	int i, tmp, count = 0;

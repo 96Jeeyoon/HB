@@ -12,7 +12,7 @@
 
 #define NUM 5
 
-void one(int **user, int num, int mode)//PRACTICE MODE**********************
+void bingo_one(int **user, int num, int mode)//PRACTICE MODE**********************
 {
 	int *check_arr, i, j, tmp, count = 0;
 

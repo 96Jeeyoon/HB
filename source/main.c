@@ -11,8 +11,8 @@
 #include "myAlloc.h"
 #include "check_bingo.h"
 #include "init_bingo.h"
-#include "one.h"
-#include "two.h"
+#include "bingo_one.h"
+#include "bingo_two.h"
 #include "del_num.h"
 #include "input_num.h"
 #include "same_num.h"
@@ -57,11 +57,11 @@ int main(void)
 			switch (mode)
 			{
 			case 1://practice mode
-				one(user, num, mode); //user, num = 5, mode = 1
-				sleep(5); break;
+				bingo_one(user, num, mode); //user, num = 5, mode = 1
+				sleep(3); break;
 			case 2://match mode
-				two(user, com, num, mode);
-				sleep(5); break;
+				bingo_two(user, com, num, mode);
+				sleep(3); break;
 			case 3://end the game
 				printf("\nGAME OVER\n");
 				return 0;
