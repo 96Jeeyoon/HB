@@ -21,8 +21,6 @@ void lose()
 	printf("         YOULOSEYOULOSEYOU              !\n");
 
 
-	printf("\n\n\n**********YOU LOSE..******YOU LOSE...***********\n\n\n\n");
-
-return 0;
+	printf("\n\n\n**********YOU LOSE..******YOU LOSE...***********\n\n");
 
 }

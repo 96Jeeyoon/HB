@@ -3,6 +3,7 @@
 #include <time.h>
 
 #include "win.h"
+#include "lose.h"
 
 void baseball_hard()
 {
@@ -15,6 +16,8 @@ void baseball_hard()
   int i, j;
   int cnt = 0;
 
+  printf("Generating random numbers...\n\n"); 
+ 
   for (i = 0; i < 4; i++)
   {
     srand(time(NULL));
@@ -82,6 +85,7 @@ void baseball_hard()
      if(cnt == 10)
      {
        printf("\n***GAME OVER***GAME OVER***GAME OVER***\n");
+       lose();
        break;
      }
 

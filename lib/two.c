@@ -12,6 +12,7 @@
 #include "init_bingo.h"
 
 #include "win.h"
+#include "lose.h"
 
 void two(int **user, int **com, int num, int mode)
 {
@@ -66,12 +67,12 @@ void two(int **user, int **com, int num, int mode)
 
 		if (check_bingo(user, num, mode) == 5)
 		{
-			printf("\nyour win.\n"); win();
+			printf("\nYOU WIN!\n"); win();
 			break;
 		}
 		if (check_bingo(com, num, mode) == 5)
 		{
-			printf("\ncomputer win.\n");
+			printf("\nCOMPUTER WIN...\n"); lose();
 			break;
 		}
 

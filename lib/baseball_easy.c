@@ -3,6 +3,7 @@
 #include <time.h>
 
 #include "win.h"
+#include "lose.h"
 
 void baseball_easy()
 {
@@ -15,6 +16,8 @@ void baseball_easy()
   int strike = 0, ball = 0;
   int i, j;
   int cnt = 0;
+
+  printf("Generating random numbers...\n\n");
 
   for (i = 0; i < 3; i++)
   {
@@ -40,8 +43,8 @@ void baseball_easy()
 
   while(1)
   {
-     printf("%d time left\n",10-cnt);
 
+     printf("%d time left\n",10-cnt);
 
      printf("please enter 3 numbers : ");
      scanf("%d %d %d",&player[0],&player[1],&player[2]);
@@ -82,7 +85,11 @@ void baseball_easy()
      
      if(cnt == 10)
      {
-       printf("\n***GAME OVER***GAME OVER***GAME OVER***\n");
+       printf("\n***GAME OVER***GAME OVER***GAME OVER***\n\n\n");
+
+       lose();
+
+       
        break;
      }
 

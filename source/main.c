@@ -18,6 +18,7 @@
 #include "same_num.h"
 
 #include "win.h"
+#include "lose.h"
 
 int main(void)
 {
